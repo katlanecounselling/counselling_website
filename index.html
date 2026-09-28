@@ -363,8 +363,28 @@
 <body>
 
   <header>
-    <div class="site-title">
-  <img src="Kat_Lane_pic.jpg" alt="Kat Lane" />
+.site-title {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 1.4rem;
+  color: #2c2c2c;
+}
+
+.site-title img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+}
+
+.site-title span {
+  display: block;
+  font-size: 0.85rem;
+  color: #6b7b74;
+  font-style: italic;
   <div>
     Your Name
     <span>Registered Counsellor &amp; Psychotherapist</span>
