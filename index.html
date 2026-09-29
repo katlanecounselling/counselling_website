@@ -64,6 +64,28 @@
       font-style: italic;
     }
 
+    .hero {
+      position: relative;
+      background-image: url('images/KL website image.jpeg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 4rem 2rem;
+    }
+
+    /* Dark overlay so text is legible */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(135, 133, 133, 0.10);
+    }
+
+    /* Keeps text above the overlay */
+    .hero > * {
+      position: relative;
+    z-index: 1;
+}
     /* --- Navigation --- */
     nav {
       display: flex;
@@ -82,7 +104,7 @@
       padding-bottom: 2px;
     }
 
-    nav button:hover { color: #4a7c6f; }
+    nav button:hover { color: #5a9686; }
 
     nav button.active {
       color: #4a7c6f;
@@ -103,6 +125,29 @@
       border-top: 1px solid #e0e0dc;
       margin: 2rem 0;
     }
+    .site-title {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 1.4rem;
+  color: #2c2c2c;
+}
+
+.site-title img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+}
+
+.site-title span {
+  display: block;
+  font-size: 0.85rem;
+  color: #6b7b74;
+  font-style: italic;
+}
 
     /* --- Footer --- */
     footer {
@@ -119,7 +164,7 @@
        ============================================= */
     .hero {
       padding: 3rem 0 2rem;
-      border-bottom: 1px solid #e0e0dc;
+      border-bottom: 1px solid #f4f4ee;
       margin-bottom: 2.5rem;
     }
 
@@ -130,7 +175,7 @@
 
     .hero .tagline {
       font-style: italic;
-      color: #6b7b74;
+      color: #075130;
       font-size: 1.1rem;
       margin-bottom: 1.5rem;
     }
@@ -363,16 +408,14 @@
 <body>
 
   <header>
-
-  <div><div class="site-title">
-  <img src="Kat_Lane_pic.jpg" alt="Kat Lane" />
-  <div>
-  
 </div>
     <div class="page-wrapper">
       <div class="site-title">
+        <img src="images/Kat Lane pic.jpg" alt="Kat Lane" />
         Kat Lane
-        <span>Registered Psychotherapeutic Counsellor</span>
+        <span>Registered Psychotherapeutic Counsellor
+          Tel: 07477658802 Email:kat@katlanecounselling.co.uk</span>
+        
       </div>
       <nav>
         <button class="active" onclick="showTab('home', this)">Home</button>
@@ -646,10 +689,11 @@
              Replace the placeholder text below with
              your real details.
              ============================================ -->
+             
         <div class="contact-grid">
 
           <div class="contact-block">
-            <h3>Email</h3>
+            <h3>Email</h3>katlcounselling@gmail.com
             <p><a href="mailto:katlcounselling@gmail.com</a>katlcounselling@gmail.com</p>
           </div>
 
