@@ -149,7 +149,13 @@ footer {
     flex-direction: column;
   }
   .about-me img {
-    width: 100%;
-    height: 220px;
+    .about-me img {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  object-position: right middle;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
   }
 }
