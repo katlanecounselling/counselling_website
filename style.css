@@ -146,14 +146,18 @@ footer {
 
 @media (max-width: 540px) {
   .about-me {
-    flex-direction: column;
-  }
-  .about-me img {
-    .about-me img {
-  width: 50px;
-  height: 100px;
+.about-me {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-direction: row-reverse;
+}
+
+.about-me img {
+  width: 120px;
+  height: 150px;
   object-fit: cover;
-  object-position: right;
+  object-position: center top;
   border-radius: 4px;
   flex-shrink: 0;
 }
