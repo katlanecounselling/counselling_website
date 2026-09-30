@@ -135,14 +135,7 @@ footer {
   gap: 2rem;
 }
 
-.about-me img {
-  width: 180px;
-  height: 220px;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 4px;
-  flex-shrink: 0;
-}
+
 
 @media (max-width: 540px) {
   .about-me {
